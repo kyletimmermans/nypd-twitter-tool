@@ -26,7 +26,7 @@ const $ = require( "jquery" )( window );
     // Determine if report date is equal to today's date
     for (var key of Object.keys(data)) {
       var report_date = data[key].created_date.slice(0,10);  // date formatting, 0's added for single digits already
-      if (report_date == "2020-09-23") {  // if report is also today's date
+      if (report_date == today) {  // if report is also today's date
         infoStore.push(data[key]);  // push reports to info store
       }
     }
