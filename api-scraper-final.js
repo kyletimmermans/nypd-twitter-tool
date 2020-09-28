@@ -54,7 +54,7 @@ while (1) {
       // empty visited queue of visited reports
       for (var i = 0; i < visitedReports.length; i++) {
         if (visitedReports[i].created_date.slice(0,10) == yesterday) {  // if report was from yesterday, remove it
-          delete visitedReports[i]
+          delete visitedReports[i];
         }
       }
     }
