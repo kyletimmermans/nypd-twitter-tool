@@ -4,6 +4,8 @@
 The tool then connects to a developer twitter account and tweets the incidents that were reported that day into a small report format. See [@fordhamcyberpa1](https://twitter.com/fordhamcyberpa1) 
 on Twitter for the final product.</div>
 
+</br>
+
 |NodeJS Requirements|
 |-------------------|
 |jsdom|
