@@ -1,3 +1,7 @@
+![Version 2.1](https://img.shields.io/badge/version-v2.1-orange.svg)
+![NodeJS 12.18.4](https://img.shields.io/badge/nodejs-12.18.4-green.svg)
+[![kyletimmermans Twitter](http://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/kyletimmermans)
+
 # <div align="center">NYPD Twitter Tool</div>
 
 This tool collects reported incidents from: [NYPD API](https://data.cityofnewyork.us/resource/fjn5-bxwg.json) which is an API that returns NYPD reported incidents into a json format.
