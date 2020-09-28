@@ -45,7 +45,7 @@ while (1) {
     currentTime = currentTime.concat(String(today.getHours()), String(today.getMinutes()), String(today.getSeconds())); // hours minutes to string
 
     // get yesterday's date to clear out yesterday's data for next day's queue
-    if (currentTime.slice(0,2) == "23" && currentTime.slice(2,4) == "59" && "00" <= currentTime.slice(4,6) >= "30") {
+    if (currentTime.slice(0,2) == "23" && currentTime.slice(2,4) == "59" && "30" <= currentTime.slice(4,6) >= "59") {
       var yesterday = today; // get date just before next day
     }
 
