@@ -60,6 +60,8 @@ while (1) {
     }
 
     // Determine if report date is equal to today's date and not visited
+    // If not visited, add to visited and infoStore
+    // If visited, do not add to infoStore or visited and go to next iteration
     for (var key of Object.keys(data)) {
       var report_date = data[key].created_date.slice(0,10);  // date formatting, 0's added for single digits already
       if (report_date == today && !visitedReports.include(data[key])) {  // if report is today's date, and not posted already
