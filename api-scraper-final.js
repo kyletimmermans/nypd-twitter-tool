@@ -6,6 +6,19 @@ const { JSDOM } = require( "jsdom" );
 const { window } = new JSDOM( "" );
 const $ = require( "jquery" )( window );
 
+// NodeJS sleep solution
+// call sleep();
+async function sleep() {  // async waits for promise and timeout from init_sleep()
+  await init_sleep(10000);  // 10 seconds
+}
+
+// init sleep function
+function init_sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
 // load from env file
 var Twitter = require('twitter'); // import Twitter npm module
 
@@ -112,10 +125,10 @@ while (1) {
          console.log(tweet);  // Tweet body.
          console.log(response);  // Raw response object.
        });
-    }
-}); // end ajax function
 
-// sleep for 10 seconds until next loop
-setTimeout(function(){console.log("New Loop Initiated")}, 10000);
+    }
+  }); // end ajax function
+
+ sleep();  // sleep for 10 seconds until next loop
 
 } // end while loop
