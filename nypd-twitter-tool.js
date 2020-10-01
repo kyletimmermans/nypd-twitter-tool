@@ -99,8 +99,9 @@ while (1) {
   }
 
   if (infoStore === undefined || infoStore.length == 0) {  // if no reports, exit. 30 second refresh time in home page
-      sleep.sleep(10); // wait for new loop
-      continue;  // start next loop
+    console.log("Nothing in infoStore, next iteration!");  // server logging purposes
+    sleep.sleep(10); // wait for new loop
+    continue;  // start next loop
   }
 
   // create AM/PM time return function
@@ -131,6 +132,8 @@ while (1) {
        status: final_status
      }
 
+     console.log(final_status);  // server logging purposes
+
      // Twitter npm module tweet function
      client.post('statuses/update', final_tweet, function(error, tweet, response) {
        if(error) {
@@ -141,6 +144,7 @@ while (1) {
      });
   }
 
+  console.log("Finished tweet(s), next iteration!");  // server logging purposes
   sleep.sleep(10); // sleep for 10 seconds
 
 } // end while loop
