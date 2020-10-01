@@ -1,0 +1,14 @@
+{
+    "name": "nypd-twitter-tool",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+      "jsdom": "latest",
+      "jquery": "latest",
+      "twitter": "latest",
+      "sleep": "latest"
+    },
+    "scripts": {
+      "start": "node nypd-twitter-tool.js"
+    }
+  }
