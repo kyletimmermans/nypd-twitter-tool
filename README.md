@@ -18,3 +18,5 @@ on Twitter or the link below to see the final product!
 |jquery|
 |twitter|
 |sleep|
+
+See _source_ folder for AWS settings and HTML/CSS files
