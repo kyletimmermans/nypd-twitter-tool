@@ -1,5 +1,5 @@
 // NodeJS
-// npm install jsdom, jquery, twitter
+// npm install jsdom, jquery, twitter, sleep
 // script runs every 10 seconds
 
 const { JSDOM } = require( "jsdom" );
@@ -28,12 +28,8 @@ function returnAjax() {
    }).done(function(data) { return data; });
 }
 
-// sleep function for while loop
-function sleep () {
-  for (let i = 1; i < 10; i++) {
-    setTimeout(function timer() { console.log("wait"); }, i * 1000);  // needs calculation
-  }
-}
+// sleep function for while loop (sleep nodejs import)
+var sleep = require('sleep');
 
 // store outside of while-loop, almost like a global var
 // don't want to re-initlialize in while-loop everytime
@@ -136,6 +132,6 @@ while (1) {
      });
   }
 
-  sleep();  // sleep for 10 seconds
+    sleep.sleep(10); // sleep for 10 seconds
 
 } // end while loop
