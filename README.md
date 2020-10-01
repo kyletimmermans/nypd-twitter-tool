@@ -6,7 +6,9 @@
 
 This tool collects reported incidents from the [NYPD API](https://data.cityofnewyork.us/resource/fjn5-bxwg.json) which is an API that returns NYPD reported incidents into a json format.
 The tool then connects to a developer twitter account and tweets the incidents that were reported that day into a small report format. See [@fordhamcyberpa1](https://twitter.com/fordhamcyberpa1)
-on Twitter for the final product!
+on Twitter or the link below to see the final product!
+
+<div align="center">http://nypdtwittertool-env.eba-xktbz6eu.us-east-1.elasticbeanstalk.com/</div>
 
 </br>
 
