@@ -9,11 +9,20 @@ const $ = require( "jquery" )( window );
 // load from env file
 var Twitter = require('twitter'); // import Twitter npm module
 
+// pull keys from environment (pfv=pulled from environment)
+// can't store these in plaintext
+var process.env.consumer_key_pfv;
+var process.env.counsumer_secret_pfv;
+var process.env.access_token_key_pfv;
+var process.env.access_token_secret_pfv;
+var process.env.npyd_app_token_pfv;
+
+// create twitter auth object
 var client = new Twitter({
-  consumer_key: 'fGt1EMRx3fPaL04Ihy99yv9Ht',
-  consumer_secret: 'wHArp5CgS85UB3McAy8lnoHTZFqyEvkqr1bPphcuHC5jIbzqTY',
-  access_token_key: '1309210840298643461-IiN7UGFlsazpvpt8ZjoeXQnWofP2kA',
-  access_token_secret: 'VQCCFzc8r3wCxRcev66Gs8bKHh8gEd8WxLQepeYoomffk'
+  consumer_key: consumer_key_pfv,
+  consumer_secret: counsumer_secret_pfv,
+  access_token_key: access_token_key_pfv,
+  access_token_secret: access_token_secret_pfv
 });
 
 // pull NYPD API info w/ jQuery
@@ -24,7 +33,7 @@ function returnAjax() {
       async: false,  // Prevent heap overflow
       cache: false,  // Save resources
       dataType: "json",
-      data: {"$limit": 10, "$$app_token": "SMohPqQ1wRqq9sbM3ww7BAyIe"}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
+      data: {"$limit": 10, "$$app_token": npyd_app_token_pfv}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
    }).done(function(data) { return data; });
 }
 
