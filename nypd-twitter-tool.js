@@ -24,7 +24,7 @@ function returnAjax() {
       async: false,  // Prevent heap overflow
       cache: false,  // Save resources
       dataType: "json",
-      data: {"$limit": 10, "$$app_token": ""}  // limit = number of entries, app_token - leave empty, we can still get public data w/o token
+      data: {"$limit": 10, "$$app_token": "SMohPqQ1wRqq9sbM3ww7BAyIe"}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
    }).done(function(data) { return data; });
 }
 
