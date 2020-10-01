@@ -90,7 +90,7 @@ while (1) {
   }
 
   if (infoStore === undefined || infoStore.length == 0) {  // if no reports, exit. 30 second refresh time in home page
-      sleep(); // wait for new loop
+      sleep.sleep(10); // wait for new loop
       continue;  // start next loop
   }
 
