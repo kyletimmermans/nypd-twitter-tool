@@ -8,7 +8,13 @@
       "twitter": "latest",
       "sleep": "latest"
     },
+    "description": "NYPD Twitter Tool",
+    "author": "Kyle",
+    "engines": {
+    "node": "12.18.4"
+    },
     "scripts": {
       "start": "node app.js"
-    }
+    },
+    "main": "server.js"
   }
