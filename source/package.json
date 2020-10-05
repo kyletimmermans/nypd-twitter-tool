@@ -1,19 +1,20 @@
 {
-    "name": "nypd-twitter-tool",
-    "version": "1.0.0",
-    "private": true,
-    "dependencies": {
-      "jsdom": "latest",
-      "jquery": "latest",
-      "twitter": "latest",
-      "sleep": "latest"
-    },
-    "description": "NYPD Twitter Tool",
-    "author": "Kyle",
-    "engines": {
+  "name": "nypd-twitter-tool",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jsdom": "latest",
+    "jquery": "latest",
+    "twitter": "latest",
+    "sleep": "latest"
+  },
+  "description": "NYPD Twitter Tool",
+  "author": "Kyle",
+  "engines": {
     "node": "12.18.4"
-    },
-    "scripts": {
-      "start": "node app.js"
-    }
-  }
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "ISC"
+}
