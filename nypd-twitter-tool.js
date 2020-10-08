@@ -11,18 +11,18 @@ var Twitter = require('twitter'); // import Twitter npm module
 
 // pull keys from environment (pfv=pulled from environment)
 // can't store these in plaintext
-var consumer_key_pfv = process.env.consumer_key_pfv;
-var consumer_secret_pfv = process.env.counsumer_secret_pfv;
-var access_token_key_pfv = process.env.access_token_key_pfv;
-var access_token_secret_pfv = process.env.access_token_secret_pfv;
-var npyd_app_token_pfv = process.env.npyd_app_token_pfv;
+var consumer_key = process.env.consumer_key_pfv;
+var consumer_secret = process.env.counsumer_secret_pfv;
+var access_token_key = process.env.access_token_key_pfv;
+var access_token_secret = process.env.access_token_secret_pfv;
+var npyd_app_token = process.env.npyd_app_token_pfv;
 
 // create twitter auth object
 var client = new Twitter({
-  consumer_key: consumer_key_pfv,
-  consumer_secret: counsumer_secret_pfv,
-  access_token_key: access_token_key_pfv,
-  access_token_secret: access_token_secret_pfv
+  consumer_key: consumer_key,
+  consumer_secret: counsumer_secret,
+  access_token_key: access_token_key,
+  access_token_secret: access_token_secret
 });
 
 // pull NYPD API info w/ jQuery
@@ -33,7 +33,7 @@ function returnAjax() {
       async: false,  // Prevent heap overflow
       cache: false,  // Save resources
       dataType: "json",
-      data: {"$limit": 10, "$$app_token": npyd_app_token_pfv}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
+      data: {"$limit": 10, "$$app_token": npyd_app_token}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
    }).done(function(data) { return data; });
 }
 
