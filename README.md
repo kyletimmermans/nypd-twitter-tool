@@ -8,7 +8,7 @@ This tool collects reported incidents from the [NYPD API](https://data.cityofnew
 The tool then connects to a developer twitter account and tweets the incidents that were reported that day into a small report format. See [@fordhamcyberpa1](https://twitter.com/fordhamcyberpa1)
 on Twitter or the link below to see the final product!
 
-<div align="center">http://nypdtwittertool-env-1.eba-mxdtwpmb.us-east-1.elasticbeanstalk.com/</div>
+<div align="center">link here</div>
 
 </br>
 
