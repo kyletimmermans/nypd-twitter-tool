@@ -1,7 +1,7 @@
 // NodeJS
-// npm install express, jsdom, jquery, twitter, sleep
+// npm install jsdom, jquery, twitter, sleep
 
-// Load webpage with default 
+// Load webpage with default NodeJS webserver
 var http = require('http');
 var fs = require('fs');
 const PORT=8080;
