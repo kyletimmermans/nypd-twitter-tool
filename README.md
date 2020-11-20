@@ -14,6 +14,7 @@ on Twitter or the link below to see the final product!
 
 |NodeJS Requirements|
 |-------------------|
+|express|
 |jsdom|
 |jquery|
 |twitter|
