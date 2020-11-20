@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "express": "latest",
     "jsdom": "latest",
     "jquery": "latest",
     "twitter": "latest",
     "sleep": "latest"
   },
   "description": "NYPD Twitter Tool",
-  "author": "Kyle",
+  "author": "Kyle Timmermans | timmermansk.17@gmail.com",
   "engines": {
     "node": "12.18.4"
   },
