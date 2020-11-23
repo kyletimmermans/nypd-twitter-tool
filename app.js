@@ -57,6 +57,8 @@ var sleep = require('sleep');
 // don't want to re-initlialize in while-loop everytime
 var visitedReports = []; // store already posted reports, do this to prevent dups on twitter
 
+var trackNumber = 0; // Used to number logs
+
 // keep running indefinitely, server style
 while (1) {
   // 17 is the magic number here, Ajax full report, want 17th item anyways
@@ -112,7 +114,8 @@ while (1) {
   }
 
   if (infoStore === undefined || infoStore.length == 0) {  // if no reports, exit. 30 second refresh time in home page
-    console.log("Nothing in infoStore, next iteration!");  // server logging purposes
+    console.log(trackNumber + " - " + "Nothing in infoStore, next iteration!");  // server logging purposes
+    trackNumber++;
     sleep.sleep(10); // wait for new loop
     continue;  // start next loop
   }
@@ -157,7 +160,8 @@ while (1) {
      });
   }
 
-  console.log("Finished tweet(s), next iteration!");  // server logging purposes
+  console.log(trackNumber+ " - " + "Finished tweet(s), next iteration!");  // server logging purposes
+  trackNumber++;
   sleep.sleep(10); // sleep for 10 seconds
 
 } // end while loop
