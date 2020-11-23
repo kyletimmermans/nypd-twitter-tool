@@ -33,7 +33,7 @@ var nypd_app_token = process.env.nypd_app_token_pfv;
 // create twitter auth object
 var client = new Twitter({
   consumer_key: consumer_key,
-  consumer_secret: counsumer_secret,
+  consumer_secret: consumer_secret,
   access_token_key: access_token_key,
   access_token_secret: access_token_secret
 });
