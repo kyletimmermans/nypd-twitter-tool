@@ -25,7 +25,7 @@ var Twitter = require('twitter'); // import Twitter npm module
 // pull keys from environment (pfv=pulled from environment)
 // can't store these in plaintext
 var consumer_key = process.env.consumer_key_pfv;
-var consumer_secret = process.env.counsumer_secret_pfv;
+var consumer_secret = process.env.consumer_secret_pfv;
 var access_token_key = process.env.access_token_key_pfv;
 var access_token_secret = process.env.access_token_secret_pfv;
 var nypd_app_token = process.env.nypd_app_token_pfv;
