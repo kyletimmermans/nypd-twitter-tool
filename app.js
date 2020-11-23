@@ -28,7 +28,7 @@ var consumer_key = process.env.consumer_key_pfv;
 var consumer_secret = process.env.counsumer_secret_pfv;
 var access_token_key = process.env.access_token_key_pfv;
 var access_token_secret = process.env.access_token_secret_pfv;
-var npyd_app_token = process.env.npyd_app_token_pfv;
+var nypd_app_token = process.env.nypd_app_token_pfv;
 
 // create twitter auth object
 var client = new Twitter({
@@ -46,7 +46,7 @@ function returnAjax() {
       async: false,  // Prevent heap overflow
       cache: false,  // Save resources
       dataType: "json",
-      data: {"$limit": 10, "$$app_token": npyd_app_token}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
+      data: {"$limit": 10, "$$app_token": nypd_app_token}  // limit = number of entries, app_token = prevent throttling and give unlimited requests
    }).done(function(data) { return data; });
 }
 
