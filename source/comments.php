@@ -1,5 +1,3 @@
-
-
 <?php
 
 // SSH Storm Vars
@@ -8,7 +6,7 @@ $storm_password = getenv('stron_password_pfv');
 
 
 // Connect to Storm via SSH (phpseclib1.0.19)
-set_include_path(get_include_path().'/phpseclib');
+set_include_path(get_include_path().'/phpseclib'); // /usr/share/php/phpseclib
 include('Net/SSH2.php');
 
 $ssh = new Net_SSH2('storm.cis.fordham.edu');
