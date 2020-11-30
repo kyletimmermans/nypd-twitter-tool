@@ -24,4 +24,4 @@ on Twitter or the link below to see the final product!
 See _source_ folder for AWS settings and HTML/CSS files
 
 ToDo:
--Lag "today" by one day
+-Lag "today" by one day in app.js
