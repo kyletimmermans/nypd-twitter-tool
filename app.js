@@ -54,6 +54,9 @@ function returnAjax() {
 function timeConverter(time) {
   var newTime = time.slice(11,16);
   if (parseInt(newTime.slice(0,2)) < 12) {
+    if (newTime[0] == "0" && newTime[1] == "0") { // if 00 for midnight, convert to 12:00
+      return ("12:" + newTime.slice(4,5).concat(" AM")).toString();
+    }
     if (newTime[0] == "0") {
       return (newTime.slice(1,5).concat(" AM")).toString(); // AM Time, everything before 12
     }
