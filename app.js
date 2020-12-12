@@ -81,9 +81,9 @@ while (1) {
 
   // Create yesterday's date (API is not live and must be lagged a day behind)
   // single digit months automatically padded with a 0
-  var today = new Date((new Date()).valueOf() - 1000*60*60*24*2);
+  var today = new Date((new Date()).valueOf() - 1000*60*60*24);
   var today_date = today.toISOString().substring(0, 10);
-  today_date = today_date.slice(8,10) + "-" + today_date.slice(5,7) + "-" + today_date.slice(0,4); // mm-dd-yyyy
+  today_date = today_date.slice(0,4) + "-" + today_date.slice(5,7) + "-" + today_date.slice(8,10); // yyyy-mm-dd (NYPD API date format)
   // match formatting of API dates, create today_date so we can still use time
 
   // following code block used to prevent dupes in using a visited queue
