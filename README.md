@@ -21,4 +21,4 @@ on Twitter or the link below to see the final product!
 
 </br>
 
-See _source_ folder for AWS settings and HTML/CSS files
+Originally built with the idea that the NYPD API was a live update, turns out that it's delayed by a day.
