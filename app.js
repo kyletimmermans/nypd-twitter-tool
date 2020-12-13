@@ -1,19 +1,6 @@
 // NodeJS
 // npm install jsdom, jquery, twitter, sleep
 
-// Load webpage with default NodeJS webserver
-var http = require('http');
-var fs = require('fs');
-const PORT=8080;
-fs.readFile('./index.html', function (err, html) {
-    if (err) throw err;
-    http.createServer(function(request, response) {
-        response.writeHeader(200, {"Content-Type": "text/html"});
-        response.write(html);
-        response.end();
-    }).listen(PORT);
-});
-
 // script runs every 10 seconds
 const { JSDOM } = require( "jsdom" );
 const { window } = new JSDOM( "" );
@@ -55,7 +42,7 @@ function timeConverter(time) {
   var newTime = time.slice(11,16);
   if (parseInt(newTime.slice(0,2)) < 12) {
     if (newTime[0] == "0" && newTime[1] == "0") { // if 00 for midnight, convert to 12:00
-      return ("12:" + newTime.slice(4,5).concat(" AM")).toString();
+      return ("12:" + newTime.slice(3,5).concat(" AM")).toString();
     }
     if (newTime[0] == "0") {
       return (newTime.slice(1,5).concat(" AM")).toString(); // AM Time, everything before 12
@@ -153,7 +140,7 @@ while (1) {
      }
 
      console.log(final_status);  // server logging purposes
-
+     console.log("Just above");
      // Twitter npm module tweet function
      client.post('statuses/update', final_tweet, function(error, tweet, response) {
        if(error) {
@@ -163,6 +150,7 @@ while (1) {
        console.log(response);  // Raw response object.
      });
   }
+  console.log("Just below");
 
   console.log(trackNumber+ " - " + "Finished tweet(s), next iteration!");  // server logging purposes
   trackNumber++;
