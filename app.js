@@ -140,7 +140,7 @@ while (1) {
      }
 
      console.log(final_status);  // server logging purposes
-     console.log("Just above");
+
      // Twitter npm module tweet function
      client.post('statuses/update', final_tweet, function(error, tweet, response) {
        if(error) {
@@ -150,7 +150,6 @@ while (1) {
        console.log(response);  // Raw response object.
      });
   }
-  console.log("Just below");
 
   console.log(trackNumber+ " - " + "Finished tweet(s), next iteration!");  // server logging purposes
   trackNumber++;
