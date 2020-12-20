@@ -19,4 +19,4 @@ on Twitter for the final product!
 
 </br>
 
-Originally built with the idea that the NYPD API was a live update, turns out that it's delayed by a day.
+Originally built with the idea that the NYPD API was a live update, turns out that it's delayed by a day. The dates for data can be delayed as long as a year.
