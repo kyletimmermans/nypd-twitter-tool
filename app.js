@@ -162,7 +162,7 @@ var trackNumber = 0; // Used to number logs
 
     console.log(trackNumber+ " - " + "Finished tweet(s), next iteration!");  // server logging purposes
     trackNumber++;
-    sleep.sleep(5); // sleep for 5 seconds
+    sleep.sleep(10); // sleep for 10 seconds
 
   }  // End while loop      // Catch below needed for the async wrapper that wraps around the while(1) loop
 })().catch(e => { console.error(e) }) // Catch needed to prevent "Unhandled Promise Rejection" error
