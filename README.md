@@ -21,9 +21,15 @@ on Twitter for the final product!
 
 ## Screenshots 
 
-Solarized dark             |  Solarized dark
-:-------------------------:|:-------------------------:
-![](https://github.com/kyletimmermans/nypd-twitter-tool/blob/master/source/terminal1.png)  |  ![](https://github.com/kyletimmermans/nypd-twitter-tool/blob/master/source/twitter.png)
+### Result
+<p align="center">
+  <img src="https://github.com/kyletimmermans/nypd-twitter-tool/blob/master/source/twitter.png?raw=true" alt="Result"/>
+</p>
+
+### Backend
+<p align="center">
+  <img src="https://github.com/kyletimmermans/nypd-twitter-tool/blob/master/source/terminal1.png?raw=true" alt="Backend"/>
+</p>
 
 
 </br>
