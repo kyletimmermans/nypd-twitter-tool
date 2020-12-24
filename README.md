@@ -19,4 +19,13 @@ on Twitter for the final product!
 
 </br>
 
-Note: Originally built with the idea that the NYPD API was a live update, turns out that it's delayed by two days. The dates for data can be delayed as long as a year.
+## Screenshots 
+
+Solarized dark             |  Solarized dark
+:-------------------------:|:-------------------------:
+![](https://github.com/kyletimmermans/nypd-twitter-tool/blob/master/source/terminal1.png)  |  ![](https://github.com/kyletimmermans/nypd-twitter-tool/blob/master/source/twitter.png)
+
+
+</br>
+
+*Note: Originally built with the idea that the NYPD API was a live update, turns out that it's delayed by two days. The dates for data can be delayed as long as a year.*
