@@ -35,4 +35,12 @@ on Twitter for the final product!
 
 </br>
 
+#### Clear Duplicate Algorithm
+<div>1) Initialize yesterday var at 11:59 PM (Next day this date will actually be yesterday)</div>
+<div>2) Next day at 12:00 AM, clear anything out of duplicate array that has the attribute: date = yesterday (So we don't clear any data from today by accident</div>
+<div>3) Only get items that have: date = today  (To prevent getting any of yesterday's data</div>
+<div>4) Go back to step 1</div>
+
+</br>
+
 *Note: Originally built with the idea that the NYPD API was a live update, turns out that it's delayed by two days. The dates for data can be delayed as long as a year.*
