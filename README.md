@@ -1,6 +1,6 @@
-![Version 2.0](https://img.shields.io/badge/version-v2.0-orange.svg)
-![NodeJS 12.18.4](https://img.shields.io/badge/nodejs-12.18.4-green.svg)
-![Latest Commit](https://img.shields.io/github/last-commit/kyletimmermans/nypd-twitter-tool?color=red)
+![Version 2.0](https://img.shields.io/badge/Version-2.0-orange.svg)
+![Node.js 12.18.4](https://img.shields.io/badge/Node.js-12.18.4-green.svg)
+![Latest Commit](https://img.shields.io/github/last-commit/kyletimmermans/nypd-twitter-tool?color=red&label=Latest%20Commit)
 [![kyletimmermans Twitter](http://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/kyletimmermans)
 
 # <div align="center">NYPD Twitter Tool</div>
